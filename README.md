@@ -20,7 +20,7 @@ Documenting lab work based on idea proposed by Chris Coveyduck.
 
 ## Setup K3S on Ubuntu VM
 
-Follow this guide - https://learn.microsoft.com/en-us/azure/iot-operations/deploy-iot-ops/howto-prepare-cluster?tabs=ubuntu
+- Follow this guide - https://learn.microsoft.com/en-us/azure/iot-operations/deploy-iot-ops/howto-prepare-cluster?tabs=ubuntu
 
 ## Setup IoT Edge module 
 
@@ -40,7 +40,7 @@ Follow this guide - https://learn.microsoft.com/en-us/azure/iot-operations/deplo
 
 ## Scratchpad
 
-'''
+```
  az connectedk8s connect --name "k3s" --resource-group "VS-GBB-ER-LAB-NE" --location "northeurope" --correlation-id "c18ab9d0-685e-48e7-ab55-12588447b0ed" --tags "Datacent
 er City StateOrDistrict CountryOrRegion"
 
@@ -173,8 +173,7 @@ spec:
           persistentVolumeClaim:
             ### This claimName must refer to your PVC metadata.name (Line 5)
             claimName: cloudingest
-
-'''
+```
 
 
 
